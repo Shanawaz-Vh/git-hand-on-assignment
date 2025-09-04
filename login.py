@@ -29,3 +29,7 @@ else:
     print("Login failed. Invalid username or password.")
 	print("Login functionality by features/login")
 	print("Login functionality by dev")
+	
+	print("Login functionality by features/login")
+
+	print("Login functionality by dev")
