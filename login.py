@@ -27,5 +27,10 @@ if simple_login(entered_username, entered_password):
     print("Login successful! Welcome.")
 else:
     print("Login failed. Invalid username or password.")
+<<<<<<< HEAD
 	
 	print("Login functionality by features/login")
+=======
+
+	print("Login functionality by dev")
+>>>>>>> 17d0e46 (version 2)
