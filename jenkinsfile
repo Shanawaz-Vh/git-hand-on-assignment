@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Sample Page') {
+            steps {
+                echo "This is a sample declarative code"
+            }
+        }
+        
+        stage('Check Packages, Disk, and Memory') {
+            steps {
+                sh 'rpm -qa | grep git || echo "git not installed"'
+                echo "Below is the disk and memory usage"
+                sh 'df -h'
+                sh 'du -ksh /var/lib/jenkins || du -ksh ~'  // checks size of Jenkins workspace
+                sh 'free -h'
+            }
+        }
+    }
+}
